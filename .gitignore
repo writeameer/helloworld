@@ -1,6 +1,3 @@
 bin/*
 obj/*
 properties/*
-*.csproj
-*.sln
-*.userprefs
