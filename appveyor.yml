@@ -6,4 +6,4 @@ deploy:
   provider: GitHub
   auth_token:
     secure: fKZuOrs5MJEuob+GBNYhsnasaeiRrsKjGxtIvffInvdKDl/uKXPI6cELRRnTR/5Y
-    artifact: bin\Debug\*.exe        
+  artifact: bin\Debug\*.exe        
