@@ -7,5 +7,3 @@ deploy:
   auth_token:
     secure: fKZuOrs5MJEuob+GBNYhsnasaeiRrsKjGxtIvffInvdKDl/uKXPI6cELRRnTR/5Y
     artifact: bin\Debug\*.exe        
-  draft: false
-  prerelease: false
