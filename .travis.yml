@@ -2,7 +2,6 @@ language: csharp
 solution: HelloWorld.sln
 script:
 - ./build.sh
-- ls -la ../HelloWorld
 deploy:
   provider: releases
   api_key:
