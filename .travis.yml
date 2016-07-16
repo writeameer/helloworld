@@ -1,5 +1,12 @@
 language: csharp
 solution: HelloWorld.sln
-script:    # the following commands are just examples, use whatever your build process requires
-  - ./build.sh
-  - ls -la
+script:
+- ./build.sh
+- ls -la
+deploy:
+  provider: releases
+  api_key:
+    secure: RHB5yx+JxkJXWwPjvcb/qQv+2+DuvgyXFXKuTL3oeh3qh3rZQDM5RX+xnXus2GHmpyvjyesuDDCLyCdZF1OzWL6uJRT3TuA7E/e3yuI2EJqIbKZGtcwi6CpuWa3hMXQw2mKGZJ8MVg6XUt76RdSmGCCMPTTzXNL/1fShY7mFAgDVig12paXaJ/m1xAGIhYASoGt13InIOi+3lgg2WwiqqV3UhbIpYrtyOGv30IMDv82cegxh3C/F7e3UBJm5+5OfI+Dka+d08lScYREBNOBz5Cibm58d5YhCsT5rtHXlOO9ogVaV3WJpIEbwaFaB0QKLf7vHqZ0EnWaXYTXCoFNqf3DL4+bLmIwf2MeS2Lwc4qKQurWGZk9PoDWkwzFutjR0WZGGVrbcbstd21l3LRGgc4mDx04WwW3UuPOpHEUidoaC+uJyRfSnALMFcGPRzsi0V4P++blZGPOuwlb+wyEQUSivOQSNmYiM8X4QA1TMYd3Y5szQjoWTxdMiOpKyXztsm/F2oRNCzoop5M4BneB0eZNX5Y9uHWr+AsGVRTnIDj+vFacZTyNH6Gy6p5kPFJ7e1y67UBORuY0HyF8BHh/3OikxWPAlv9n3D8xhUHmhK2dDzWcUgpg1fk556gLbfna1Fm0v/kX0K9A8iyeSRvbA3tTvD7fNIyn8M4Mb/mtF1MU=
+  file: HelloWorld
+  on:
+    repo: writeameer/helloworld
