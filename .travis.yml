@@ -10,3 +10,10 @@ deploy:
   file: ../HelloWorld
   on:
     repo: writeameer/helloworld
+mono:  
+  - 4.4.1
+os:
+  - linux # Ubuntu 14.04
+  - osx
+
+osx_image: xcode7.2 # OSX 10.11
