@@ -1,9 +1,11 @@
+version: 1.0.{build}
 build:
-  project: HelloWorld.sln  
+  project: HelloWorld.sln
+  verbosity: minimal
+artifacts:
+- path: bin\Debug\*.exe
 deploy:
-  release: v$(appveyor_build_version)
-  description: 'Release description'
-  provider: GitHub
+- provider: GitHub
   auth_token:
-    secure: fKZuOrs5MJEuob+GBNYhsnasaeiRrsKjGxtIvffInvdKDl/uKXPI6cELRRnTR/5Y
-  artifact: bin\Debug\*.exe        
+    secure: stRZU6MIr0ug18n/lVxLLvw7u8h8tKSoTRD3qdp+HUqWRD+LI8mBrOOawcYqsX3oxV3b2x+Pi7qZs8m/V7fE5Qb58jk4aKOysL2iyYsOKII=
+  artifact: bin\Debug\HelloWorld.exe
